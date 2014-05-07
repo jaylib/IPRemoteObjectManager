@@ -22,11 +22,11 @@
 		546C9CC9191A1C1E0067E53E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546C9CA8191A1C1E0067E53E /* UIKit.framework */; };
 		546C9CD1191A1C1E0067E53E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 546C9CCF191A1C1E0067E53E /* InfoPlist.strings */; };
 		546C9CD3191A1C1E0067E53E /* IPRemoteObjectManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 546C9CD2191A1C1E0067E53E /* IPRemoteObjectManagerTests.m */; };
-		546C9CE8191A1C500067E53E /* IPRemoteObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 546C9CDF191A1C500067E53E /* IPRemoteObjectManager.m */; };
-		546C9CE9191A1C500067E53E /* IPRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 546C9CE1191A1C500067E53E /* IPRemoteImage.m */; };
-		546C9CEA191A1C500067E53E /* IPRemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 546C9CE3191A1C500067E53E /* IPRemoteObject.m */; };
-		546C9CEB191A1C500067E53E /* IPRemoteJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 546C9CE5191A1C500067E53E /* IPRemoteJSON.m */; };
-		546C9CEC191A1C500067E53E /* IPRemoteObjectCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 546C9CE7191A1C500067E53E /* IPRemoteObjectCollection.m */; };
+		546C9CF7191A1F0E0067E53E /* IPRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 546C9CEE191A1F0E0067E53E /* IPRemoteImage.m */; };
+		546C9CF8191A1F0E0067E53E /* IPRemoteJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 546C9CF0191A1F0E0067E53E /* IPRemoteJSON.m */; };
+		546C9CF9191A1F0E0067E53E /* IPRemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 546C9CF2191A1F0E0067E53E /* IPRemoteObject.m */; };
+		546C9CFA191A1F0E0067E53E /* IPRemoteObjectCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 546C9CF4191A1F0E0067E53E /* IPRemoteObjectCollection.m */; };
+		546C9CFB191A1F0E0067E53E /* IPRemoteObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 546C9CF6191A1F0E0067E53E /* IPRemoteObjectManager.m */; };
 		B8CE8DC364B94052B629E0AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A0FF8502AD4A5CAAA77DE6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -61,16 +61,16 @@
 		546C9CCE191A1C1E0067E53E /* IPRemoteObjectManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IPRemoteObjectManagerTests-Info.plist"; sourceTree = "<group>"; };
 		546C9CD0191A1C1E0067E53E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		546C9CD2191A1C1E0067E53E /* IPRemoteObjectManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPRemoteObjectManagerTests.m; sourceTree = "<group>"; };
-		546C9CDE191A1C500067E53E /* IPRemoteObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPRemoteObjectManager.h; path = ../IPRemoteObjectManager.h; sourceTree = "<group>"; };
-		546C9CDF191A1C500067E53E /* IPRemoteObjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPRemoteObjectManager.m; path = ../IPRemoteObjectManager.m; sourceTree = "<group>"; };
-		546C9CE0191A1C500067E53E /* IPRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPRemoteImage.h; path = ../IPRemoteImage.h; sourceTree = "<group>"; };
-		546C9CE1191A1C500067E53E /* IPRemoteImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPRemoteImage.m; path = ../IPRemoteImage.m; sourceTree = "<group>"; };
-		546C9CE2191A1C500067E53E /* IPRemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPRemoteObject.h; path = ../IPRemoteObject.h; sourceTree = "<group>"; };
-		546C9CE3191A1C500067E53E /* IPRemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPRemoteObject.m; path = ../IPRemoteObject.m; sourceTree = "<group>"; };
-		546C9CE4191A1C500067E53E /* IPRemoteJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPRemoteJSON.h; path = ../IPRemoteJSON.h; sourceTree = "<group>"; };
-		546C9CE5191A1C500067E53E /* IPRemoteJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPRemoteJSON.m; path = ../IPRemoteJSON.m; sourceTree = "<group>"; };
-		546C9CE6191A1C500067E53E /* IPRemoteObjectCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPRemoteObjectCollection.h; path = ../IPRemoteObjectCollection.h; sourceTree = "<group>"; };
-		546C9CE7191A1C500067E53E /* IPRemoteObjectCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPRemoteObjectCollection.m; path = ../IPRemoteObjectCollection.m; sourceTree = "<group>"; };
+		546C9CED191A1F0E0067E53E /* IPRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPRemoteImage.h; sourceTree = "<group>"; };
+		546C9CEE191A1F0E0067E53E /* IPRemoteImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPRemoteImage.m; sourceTree = "<group>"; };
+		546C9CEF191A1F0E0067E53E /* IPRemoteJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPRemoteJSON.h; sourceTree = "<group>"; };
+		546C9CF0191A1F0E0067E53E /* IPRemoteJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPRemoteJSON.m; sourceTree = "<group>"; };
+		546C9CF1191A1F0E0067E53E /* IPRemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPRemoteObject.h; sourceTree = "<group>"; };
+		546C9CF2191A1F0E0067E53E /* IPRemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPRemoteObject.m; sourceTree = "<group>"; };
+		546C9CF3191A1F0E0067E53E /* IPRemoteObjectCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPRemoteObjectCollection.h; sourceTree = "<group>"; };
+		546C9CF4191A1F0E0067E53E /* IPRemoteObjectCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPRemoteObjectCollection.m; sourceTree = "<group>"; };
+		546C9CF5191A1F0E0067E53E /* IPRemoteObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPRemoteObjectManager.h; sourceTree = "<group>"; };
+		546C9CF6191A1F0E0067E53E /* IPRemoteObjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPRemoteObjectManager.m; sourceTree = "<group>"; };
 		81A0FF8502AD4A5CAAA77DE6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAD4A502B584BD2967BB51F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,16 +180,16 @@
 		546C9CDD191A1C3B0067E53E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				546C9CDE191A1C500067E53E /* IPRemoteObjectManager.h */,
-				546C9CDF191A1C500067E53E /* IPRemoteObjectManager.m */,
-				546C9CE0191A1C500067E53E /* IPRemoteImage.h */,
-				546C9CE1191A1C500067E53E /* IPRemoteImage.m */,
-				546C9CE2191A1C500067E53E /* IPRemoteObject.h */,
-				546C9CE3191A1C500067E53E /* IPRemoteObject.m */,
-				546C9CE4191A1C500067E53E /* IPRemoteJSON.h */,
-				546C9CE5191A1C500067E53E /* IPRemoteJSON.m */,
-				546C9CE6191A1C500067E53E /* IPRemoteObjectCollection.h */,
-				546C9CE7191A1C500067E53E /* IPRemoteObjectCollection.m */,
+				546C9CED191A1F0E0067E53E /* IPRemoteImage.h */,
+				546C9CEE191A1F0E0067E53E /* IPRemoteImage.m */,
+				546C9CEF191A1F0E0067E53E /* IPRemoteJSON.h */,
+				546C9CF0191A1F0E0067E53E /* IPRemoteJSON.m */,
+				546C9CF1191A1F0E0067E53E /* IPRemoteObject.h */,
+				546C9CF2191A1F0E0067E53E /* IPRemoteObject.m */,
+				546C9CF3191A1F0E0067E53E /* IPRemoteObjectCollection.h */,
+				546C9CF4191A1F0E0067E53E /* IPRemoteObjectCollection.m */,
+				546C9CF5191A1F0E0067E53E /* IPRemoteObjectManager.h */,
+				546C9CF6191A1F0E0067E53E /* IPRemoteObjectManager.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -329,12 +329,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				546C9CB1191A1C1E0067E53E /* main.m in Sources */,
+				546C9CFB191A1F0E0067E53E /* IPRemoteObjectManager.m in Sources */,
 				546C9CB5191A1C1E0067E53E /* IPAppDelegate.m in Sources */,
-				546C9CE8191A1C500067E53E /* IPRemoteObjectManager.m in Sources */,
-				546C9CEA191A1C500067E53E /* IPRemoteObject.m in Sources */,
-				546C9CE9191A1C500067E53E /* IPRemoteImage.m in Sources */,
-				546C9CEC191A1C500067E53E /* IPRemoteObjectCollection.m in Sources */,
-				546C9CEB191A1C500067E53E /* IPRemoteJSON.m in Sources */,
+				546C9CF7191A1F0E0067E53E /* IPRemoteImage.m in Sources */,
+				546C9CF9191A1F0E0067E53E /* IPRemoteObject.m in Sources */,
+				546C9CFA191A1F0E0067E53E /* IPRemoteObjectCollection.m in Sources */,
+				546C9CF8191A1F0E0067E53E /* IPRemoteJSON.m in Sources */,
 				546C9CBE191A1C1E0067E53E /* IPViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

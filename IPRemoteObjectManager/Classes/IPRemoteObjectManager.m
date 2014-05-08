@@ -10,6 +10,10 @@
 #import "IPRemoteImage.h"
 #import "IPRemoteJSON.h"
 
+@interface IPRemoteObjectManager ()
+@property (nonatomic, strong) RACDisposable *signal;
+@end
+
 @implementation IPRemoteObjectManager
 
 - (void)getRemoteObjects:(NSArray *)remoteObjects complete:(void (^)(NSArray *remoteImages))complete error:(void (^)(NSError *error))errorBlock {
@@ -17,20 +21,29 @@
     NSMutableArray *signals = [NSMutableArray array];
     
     [remoteObjects enumerateObjectsUsingBlock:^(IPRemoteObject *remoteObject, NSUInteger idx, BOOL *stop) {
-        
         RACSignal *signal = [self racSingalForRemoteObject:remoteObject];
         [signals addObject:signal];
-    
     }];
 //    
-    [[RACSignal merge:signals] subscribeNext:^(IPRemoteImage *x) {
-        x.completionBlock(x);
+    self.signal = [[RACSignal merge:signals] subscribeNext:^(IPRemoteImage *x) {
+        if (x.completionBlock) {
+            x.completionBlock(x);
+        }
     } error:^(NSError *error) {
-        if (errorBlock) errorBlock(error);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (errorBlock) errorBlock(error);
+        });
     } completed:^{
-        if (complete) complete(remoteObjects);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (complete) complete(remoteObjects);
+        });
     }];
     
+    
+}
+
+- (void)cancel {
+    [self.signal dispose];
 }
 
 - (RACSignal *)racSingalForRemoteObjectCollection:(IPRemoteObjectCollection *)remoteObjectCollection {
@@ -46,9 +59,9 @@
         RACReplaySubject *subject = [RACReplaySubject replaySubjectWithCapacity:1];
         
         [[RACSignal merge:remoteObjectSingals] subscribeNext:^(IPRemoteImage *x) {
-            
-            x.completionBlock(x);
-            
+            if (x.completionBlock) {
+                x.completionBlock(x);
+            }
         } completed:^{
             
             [subject sendNext:remoteObjectCollection];

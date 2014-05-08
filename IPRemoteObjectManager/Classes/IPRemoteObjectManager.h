@@ -17,4 +17,6 @@
 
 - (void)getRemoteObjects:(NSArray *)remoteObjects complete:(void (^)(NSArray *remoteImages))complete error:(void (^)(NSError *error))errorBlock;
 
+- (void)cancel;
+
 @end

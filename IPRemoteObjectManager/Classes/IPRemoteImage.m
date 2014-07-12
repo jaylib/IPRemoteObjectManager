@@ -22,6 +22,7 @@
 - (AFHTTPRequestOperation *)requestOperationWithRequest:(NSMutableURLRequest *)request {
     AFHTTPRequestOperation *requestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     requestOperation.responseSerializer = [[AFImageResponseSerializer alloc] init];
+    request.cachePolicy = NSURLRequestReturnCacheDataElseLoad;
     return requestOperation;
 }
 

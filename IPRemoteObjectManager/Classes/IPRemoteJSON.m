@@ -10,14 +10,18 @@
 
 @implementation IPRemoteJSON
 
-- (void)setResponseObject:(id)object {
+- (void) setResponseObject:(id)object
+{
     [super setResponseObject:object];
     self.responseData = object;
 }
 
-- (AFHTTPRequestOperation *)requestOperationWithRequest:(NSMutableURLRequest *)request {
-    AFHTTPRequestOperation *requestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+- (AFHTTPRequestOperation *) requestOperationWithRequest:(NSMutableURLRequest *)request
+{
+    AFHTTPRequestOperation * requestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+
     requestOperation.responseSerializer = [[AFJSONResponseSerializer alloc] init];
+    requestOperation.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain", @"application/json", nil];
     return requestOperation;
 }
 

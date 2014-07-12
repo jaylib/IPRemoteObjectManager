@@ -11,7 +11,7 @@
 
 @interface IPRemoteObject : NSObject
 
-typedef void (^RemoteObjectCompletionBlock)(IPRemoteObject *remoteObject);
+typedef void (^RemoteObjectCompletionBlock)(id remoteObject);
 
 @property (nonatomic, copy) RemoteObjectCompletionBlock completionBlock;
 
